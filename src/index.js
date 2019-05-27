@@ -69,7 +69,7 @@ function initState(vm, keys) {
   }
 }
 
-function setData(vm:, dict, dictKeys, dataKeys) {
+function setData(vm, dict, dictKeys, dataKeys) {
   dataKeys.forEach((key, idx) => {
     let value = dict.find(_ => {
       return  _.dict === dictKeys[idx]
