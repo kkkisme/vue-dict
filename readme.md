@@ -6,6 +6,7 @@
 
 ### Use Case
 
+- main.js
 ```js
 import Vue from 'vue'
 import dictPlugin from './path/to/dict'
@@ -38,6 +39,20 @@ Vue.use(dictPlugin, {
   }
 })
 ```
+- MyComponent.vue
+```vue
+<template>
+    <div>
+      <div>{{dict.GENDER}}</div>
+      <div>{{dict.myType}}</div>
+    </div>
+</template>
 
-
+<script >
+export default {
+  name: 'MyComponent',
+  dict: ['GENDER', ['TYPE', 'myType']]
+}
+</script>
+```
 
